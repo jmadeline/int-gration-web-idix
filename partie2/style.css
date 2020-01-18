@@ -24,6 +24,8 @@ article:last-child {
   background-color: rgb(49, 47, 47);
 }
 
+/* Valeur de la media obtenue en additionnant les marges et les éléments du grid-template-columns (130+300+15+300+130)
+Ainsi le breack point a bien lieu quand l'élement 2 a la même largeur que l 'élément 3*/
 @media (max-width : 875px) {
   body {
     display: grid;
