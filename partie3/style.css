@@ -24,9 +24,16 @@ body {
 }
 
 .tabs_link.active {
-  display: block;
   color: rgb(82, 136, 206);
   border-bottom: 2px solid rgb(82, 136, 206);
+}
+
+.tabs_panel.active {
+  display: block;
+}
+
+.tabs_panel {
+  display: none;
 }
 
 hr {
