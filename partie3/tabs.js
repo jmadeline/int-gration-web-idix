@@ -4,23 +4,20 @@ const divs = document.querySelectorAll('.tabs_panels .tabs_panel');
 tabs.forEach(tab => {
   tab.addEventListener('click', e => {
     e.preventDefault();
-    removeActiveTab();
-    addActiveTab(tab);
+    switchTab(tab);
   });
 })
 
-const removeActiveTab = () => {
-  tabs.forEach(tab => {
-    tab.classList.remove('active');
+const switchTab = tab => {
+  tab.parentNode.parentNode.querySelectorAll('.tabs_link').forEach(item => {
+    item.classList.remove('active');
   });
-  divs.forEach(div => {
-    div.classList.remove('active');
-  });
-}
-
-const addActiveTab = tab => {
   tab.classList.add('active');
+
   const href = tab.getAttribute('href');
   const matchingDiv = document.querySelector(href);
+  matchingDiv.parentNode.querySelectorAll('.tabs_panel').forEach(panel => {
+    panel.classList.remove('active');
+  });
   matchingDiv.classList.add('active');
 }
