@@ -1,5 +1,11 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---- Search  ---- */
+
 form {
-  margin-top: 5%;
+  margin-top: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,6 +39,8 @@ button:hover {
   border: 1px solid orange;
 }
 
+/* ---- Articles  ---- */
+
 section {
   width: 65%;
   margin: auto;
@@ -44,6 +52,10 @@ article {
   margin: 50px 0 30px;
 }
 
+article img {
+  padding-left: 15px;
+}
+
 .text {
   padding-left: 50px;
 }
@@ -53,6 +65,8 @@ hr {
   border: 0.2px solid lightgray;
 }
 
+/* ---- Navbar ---- */
+
 nav {
   position: relative;
 }
@@ -61,7 +75,7 @@ ul {
   display: flex;
   justify-content: center;
   width: 65%;
-  margin: 50px auto;
+  margin: 50px auto 10px;
   padding: 0;
   height: 50px;
   line-height: 50px;

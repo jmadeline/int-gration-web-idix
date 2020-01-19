@@ -14,7 +14,7 @@ header {
   background-color: rgb(49, 47, 47);
 }
 
-.element2 {
+article:nth-child(2) {
   grid-column: 2 / 3;
   background-color: rgb(49, 47, 47);
 }
@@ -30,6 +30,7 @@ Ainsi le breack point a bien lieu quand l'élement 2 a la même largeur que l '�
   body {
     display: grid;
     grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 30px auto auto auto 30px;
     row-gap: 15px;
   }
 
@@ -37,7 +38,7 @@ Ainsi le breack point a bien lieu quand l'élement 2 a la même largeur que l '�
     grid-column: 2 / 5;
   }
 
-  .element2 {
+  article:nth-child(2) {
     grid-column: 2 / 5;
   }
 
